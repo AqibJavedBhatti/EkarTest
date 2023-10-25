@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KFCollectionViewCell" customModule="EkarTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="242"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="242"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I71-uU-a6m">
+                        <rect key="frame" x="0.0" y="0.0" width="423" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAr-Cd-gMN">
+                                <rect key="frame" x="5" y="0.0" width="413" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88627450980392153" green="0.96470588235294119" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZAr-Cd-gMN" secondAttribute="bottom" id="A9j-ae-g2o"/>
+                            <constraint firstItem="ZAr-Cd-gMN" firstAttribute="leading" secondItem="I71-uU-a6m" secondAttribute="leading" constant="5" id="E16-Z3-5M3"/>
+                            <constraint firstAttribute="height" constant="25" id="Fav-kC-1BK"/>
+                            <constraint firstAttribute="trailing" secondItem="ZAr-Cd-gMN" secondAttribute="trailing" constant="5" id="QIk-7u-Ufg"/>
+                            <constraint firstItem="ZAr-Cd-gMN" firstAttribute="top" secondItem="I71-uU-a6m" secondAttribute="top" id="gVt-Tq-NDn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="I71-uU-a6m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="U7I-jy-goj"/>
+                <constraint firstAttribute="bottom" secondItem="I71-uU-a6m" secondAttribute="bottom" id="YRt-Ul-1ja"/>
+                <constraint firstAttribute="trailing" secondItem="I71-uU-a6m" secondAttribute="trailing" id="wd1-XT-y2C"/>
+                <constraint firstItem="I71-uU-a6m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yOa-MM-T81"/>
+            </constraints>
+            <size key="customSize" width="423" height="242"/>
+            <connections>
+                <outlet property="mainLabel" destination="ZAr-Cd-gMN" id="Guz-Pd-4i7"/>
+            </connections>
+            <point key="canvasLocation" x="286.25954198473283" y="88.028169014084511"/>
+        </collectionViewCell>
+    </objects>
+</document>

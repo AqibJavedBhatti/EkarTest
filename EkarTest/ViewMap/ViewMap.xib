@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewMap" customModule="EkarTest" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyh-gc-bsB">
+                    <rect key="frame" x="0.0" y="-1" width="393" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="l57-IF-ynU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ep-fg-E98">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ekarlogo" translatesAutoresizingMaskIntoConstraints="NO" id="hQO-43-z2J">
+                            <rect key="frame" x="146.66666666666666" y="7.6666666666666714" width="100" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="DCt-BR-Xr7"/>
+                                <constraint firstAttribute="height" constant="35" id="rc5-2U-PHH"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Dwp-bT-51k"/>
+                        <constraint firstItem="hQO-43-z2J" firstAttribute="centerY" secondItem="6Ep-fg-E98" secondAttribute="centerY" id="iNi-is-U4P"/>
+                        <constraint firstItem="hQO-43-z2J" firstAttribute="centerX" secondItem="6Ep-fg-E98" secondAttribute="centerX" id="mwW-Ir-CSs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Iyh-gc-bsB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L79-51-xNg"/>
+                <constraint firstItem="6Ep-fg-E98" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SMS-zh-1mm"/>
+                <constraint firstAttribute="trailing" secondItem="Iyh-gc-bsB" secondAttribute="trailing" id="bsE-qf-LMU"/>
+                <constraint firstItem="6Ep-fg-E98" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ecK-xT-87s"/>
+                <constraint firstItem="6Ep-fg-E98" firstAttribute="top" secondItem="Iyh-gc-bsB" secondAttribute="bottom" id="hRC-bV-ZK0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Ep-fg-E98" secondAttribute="trailing" id="kkl-Yo-N8F"/>
+            </constraints>
+            <point key="canvasLocation" x="26.717557251908396" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ekarlogo" width="354" height="142"/>
+    </resources>
+</document>
